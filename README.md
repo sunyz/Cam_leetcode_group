@@ -10,3 +10,11 @@ work hard, play harder!
 7月开始的秋招在即，希望我们相互push，一起刷起来！
 
 欢迎更多的盆友加入(\*^▽^\*)
+
+## 提交格式
+
+每个题目用 ID+Name+level 的方式创建文件夹，然后里面建立  Author_methodID.language
+
+实现文件内加入leetcode的时间空间评测结果，以及解法思路
+
+ヾ(◍°∇°◍)ﾉﾞ加油！
