@@ -14,6 +14,10 @@ Output: 1->1->2->3->4->4
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+// 执行用时 : 16 ms, 在Merge Two Sorted Lists的C++提交中击败了18.91% 的用户
+// 内存消耗 : 9.2 MB, 在Merge Two Sorted Lists的C++提交中击败了0.38% 的用户
+
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
