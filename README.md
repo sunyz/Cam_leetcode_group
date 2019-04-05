@@ -13,8 +13,24 @@ work hard, play harder!
 
 ## 提交格式
 
-每个题目用 ID+Name+level 的方式创建文件夹，然后里面建立  Author_methodID.language
+每个题目用 ID+Name+level 的方式创建文件夹，然后里面建立  Author_methodID_starLevel.language
 
 实现文件内加入leetcode的时间空间评测结果，以及解法思路
 
 ヾ(◍°∇°◍)ﾉﾞ加油！
+
+## 关于StarLevel
+
+算法的时空排名较高者中：
+
+| 排名   |  星级  |
+| ----   |  ----  |
+| 0% ~ 30%   | star 1 |⭐            |
+| 31% ~ 60%  | star 2 |⭐⭐          |
+| 61% ~ 80%  | star 3 |⭐⭐⭐       |
+| 81% ~ 90%  | star 4 |⭐⭐⭐⭐     |
+| 91% ~ 100% | star 5 |⭐⭐⭐⭐⭐    |
+
+（*注: 排名的小数部分向上取整好了*~~（滑稽~~
+
+祝大家高产star！🌟🌟🌟🌟
