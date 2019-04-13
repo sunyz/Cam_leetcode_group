@@ -15,11 +15,14 @@ work hard, play harder!
 
 ## 提交格式
 
-每个题目用 ID+Name+level 的方式创建文件夹，然后里面建立  Author_methodID_starLevel.language
+每个题目用 ID+Name(中英文都要哈)+level 的方式创建文件夹，然后里面建立  Author_methodID_starLevel.language
 
 实现文件内加入leetcode的时间空间评测结果，以及解法思路
 
 ヾ(◍°∇°◍)ﾉﾞ加油！
+
+
+注：题目的英文名字可以去外网leetcode中查看同题号的名字
 
 ## 关于StarLevel
 
