@@ -4,7 +4,7 @@
  * @LastEditors: sunyz
  * @Description: content
  * @Date: 2019-04-22 01:31:11
- * @LastEditTime: 2019-04-22 01:36:11
+ * @LastEditTime: 2019-04-22 01:41:24
  */
 
 //  * @Description: 和杨辉三角1的思路类似，直接套用1的也能直接一样的时间
@@ -15,17 +15,16 @@
 
 
 // 执行用时 : 8 ms, 在Pascal's Triangle II的C++提交中击败了94.86% 的用户
-// 内存消耗 : 8.3 MB, 在Pascal's Triangle II的C++提交中击败了87.69% 的用户
+// 内存消耗 : 8.2 MB, 在Pascal's Triangle II的C++提交中击败了94.86% 的用户
 
 
 class Solution {
 public:
     vector<int> getRow(int rowIndex) {
         vector<int> eve_row(rowIndex+1, 1);
-        if (rowIndex == 0) return eve_row;
-        for (int i=1; i<rowIndex+1; i++) {
+        for (int i=1; i <= rowIndex; i++) {
             for (int j=i-1; j>0; j--) { //倒序不会对已经变化的产生影响
-              eve_row[j] = eve_row[j] + eve_row[j-1];
+              eve_row[j] += eve_row[j-1];
             }   
         }
       return eve_row;
