@@ -12,6 +12,13 @@
 执行用时 : 20 ms, 在Kth Largest Element in an Array的C++提交中击败了79.88% 的用户
 内存消耗 : 9.6 MB, 在Kth Largest Element in an Array的C++提交中击败了34.71% 的用户
 话说priority_queue为什么greater表示小顶堆。。
+这道题使用io黑科技会有奇效，同样是以下代码，加上
+const static auto io_speed_up = []() {
+	std::ios::sync_with_stdio(false);
+	cin.tie(0);
+	return 0;
+}();
+以后就变成5star了。甚至你直接调用std::sort效果都不错。。
 */
 class Solution {
 public:
