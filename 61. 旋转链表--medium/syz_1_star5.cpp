@@ -2,7 +2,7 @@
  * @Author: sunyz
  * @Date: 2019-05-15 22:23:18
  * @LastEditors: sunyz
- * @LastEditTime: 2019-05-15 22:51:34
+ * @LastEditTime: 2019-05-15 22:59:18
  */
 
 //  * @Description: 又是暴力解法
@@ -23,14 +23,15 @@ public:
             tmp.push_back(it->val);
             it = it->next;
         }
-        ListNode* ans = new ListNode(-1);
-        ListNode** a = &ans;
         int cnt = tmp.size();
-        for (int i=0; i<cnt; i++) {
+        if (cnt == 0) return NULL;
+        ListNode* ans = new ListNode(tmp[(cnt - k % cnt) % cnt]);
+        ListNode* a = ans;
+        for (int i=1; i<cnt; i++) {
             ListNode* ans_one = new ListNode(tmp[(cnt + i - k % cnt) % cnt]);
-            (*a)->next = ans_one;
-            a = &((*a)->next);
+            a->next = ans_one;
+            a = ans_one;
         }
-        return ans->next;
+        return ans;
     }
 };
