@@ -1,5 +1,5 @@
 /*
-同syz
+同syz，不知道为什么前几名都是排序，时间复杂度应该不如set啊
 执行用时 : 104 ms, 在Contains Duplicate的C++提交中击败了18.76% 的用户
 内存消耗 : 16.5 MB, 在Contains Duplicate的C++提交中击败了34.63% 的用户
 */
