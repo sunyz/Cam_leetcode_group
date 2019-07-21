@@ -20,7 +20,7 @@ board =
 链接：https://leetcode-cn.com/problems/word-search
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
-// 超出时间限制的解法，把set换成marked数组依然超出，虽然我看其他人的答案也是DFS，但这个真的好容易超时啊
+// 超出时间限制的解法，把set换成marked数组依然超出，虽然我看其他人的答案也是DFS，但这个真的好容易超时啊，后来我加了一些剪枝，把cout删掉了，才能过
 class Solution {
 public:
     
