@@ -27,14 +27,14 @@
 显示详情 
 
 执行用时 :
-36 ms
+16 ms
 , 在所有 C++ 提交中击败了
-54.51%
+97.73%
 的用户
 内存消耗 :
-18.3 MB
+17.7 MB
 , 在所有 C++ 提交中击败了
-28.13%
+30.86%
 的用户*/
 /**
  * Definition for a binary tree node.
@@ -47,15 +47,12 @@
  */
 class Solution {
 public:
-    unordered_map<int, int> pre_map;
     unordered_map<int, int> in_map;
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         if (preorder.size() == 0)
             return NULL;
         // construct map
-        for (int pre = 0; pre < preorder.size(); pre++) {
-            pre_map[preorder[pre]] = pre;
-        }
+        
         for (int pre = 0; pre < preorder.size(); pre++) {
             in_map[inorder[pre]] = pre;
         }
