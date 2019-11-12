@@ -51,3 +51,39 @@ public:
  * int param_1 = obj->get(key);
  * obj->put(key,value);
  */
+
+// 还是在别人基础上改对了。。
+class LRUCache {
+public:
+    LRUCache(int capacity) : capacity_(capacity) {}
+
+    int get(int key) {
+        if (hash_.find(key) == hash_.end())
+            return -1;
+        else {
+            int value = *hash_[key];
+            ls_.erase(hash_[key]);
+            ls_.push_front((value));
+            hash_[key] = ls_.begin();
+            return value;
+        }
+    }
+
+    void put(int key, int value) {
+        if (hash_.find(key) != hash_.end())
+            ls_.erase(hash_[key]);
+        else if (ls_.size() >= capacity_) {
+            hash_.erase(ls_.back());
+            ls_.pop_back();
+        }
+        ls_.push_front((value));
+        hash_[key] = ls_.begin();
+    }
+
+private:
+    int capacity_;
+    list<int> ls_;
+    unordered_map<int, list<int>::iterator> hash_;
+};
+
+
